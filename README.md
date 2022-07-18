@@ -46,6 +46,15 @@ Se puede crear la red virtual previamente y seleccionarla o crearla desde el asi
 
 ![image](https://user-images.githubusercontent.com/17581842/179631678-809d708b-9d53-4122-8c85-6a90599de7e9.png)
 
+Una vez creado el entorno ya podemos crear aplicaciones y asociarlas al mismo.
+
+![image](https://user-images.githubusercontent.com/17581842/179632290-3d6aca85-fc87-4a6a-bf65-826fbacacfef.png)
+
+![image](https://user-images.githubusercontent.com/17581842/179632459-19626134-6691-4c79-9d55-dc315159527d.png)
+
+![image](https://user-images.githubusercontent.com/17581842/179632587-973202cc-a278-42a9-9b09-0f538a376a5e.png)
+
+
 
 
 # Integración de red virtual con Azure Container Apps
