@@ -34,7 +34,32 @@ Conectividad privada a través de la infraestructura de red virtual.
 
 ![AzureContainerApps (2)](https://user-images.githubusercontent.com/17581842/179628279-0648eb25-5b03-4b47-91aa-a008eb29a0b8.png)
 
+
+
 # Despliegue
+
+## Red Virtual
+
+![image](https://user-images.githubusercontent.com/17581842/179633862-5050c6b9-1417-47e8-83a3-52ce20908b7f.png)
+
+## Sub Red
+
+![image](https://user-images.githubusercontent.com/17581842/179634108-c7ea6019-94be-44de-8257-2075d9619bfd.png)
+
+## Área de trabajo de Log Analytics
+
+![image](https://user-images.githubusercontent.com/17581842/179634583-b67886b6-2596-458f-8e30-6ccb6d436f76.png)
+
+## Registro de contenedor
+
+![image](https://user-images.githubusercontent.com/17581842/179634654-47b09896-fa31-489a-9ace-499fa6872621.png)
+
+## Zona DNS privada
+
+![image](https://user-images.githubusercontent.com/17581842/179634763-3c1ecd42-4579-4726-9c27-565a11e2b642.png)
+
+![image](https://user-images.githubusercontent.com/17581842/179634811-6633c767-8dc7-4622-817c-42f55f3c8297.png)
+
 
 ![image](https://user-images.githubusercontent.com/17581842/179631367-fb3e88f7-c308-4cdb-a1d2-70cbb0382570.png)
 
