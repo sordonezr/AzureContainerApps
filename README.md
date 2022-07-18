@@ -34,4 +34,18 @@ Conectividad privada a través de la infraestructura de red virtual.
 
 ![AzureContainerApps (2)](https://user-images.githubusercontent.com/17581842/179628279-0648eb25-5b03-4b47-91aa-a008eb29a0b8.png)
 
+# Despliegue
+
+![image](https://user-images.githubusercontent.com/17581842/179631367-fb3e88f7-c308-4cdb-a1d2-70cbb0382570.png)
+
+Se puede crear el área de trabajo de Log Analytics previamente y seleccionarla o crearla desde el asistente.
+
+![image](https://user-images.githubusercontent.com/17581842/179631463-b696ae8b-2f38-4be0-a398-09677652674b.png)
+
+Se puede crear la red virtual previamente y seleccionarla o crearla desde el asistente.
+
+![image](https://user-images.githubusercontent.com/17581842/179631678-809d708b-9d53-4122-8c85-6a90599de7e9.png)
+
+
+
 # Integración de red virtual con Azure Container Apps
