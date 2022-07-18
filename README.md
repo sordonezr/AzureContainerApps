@@ -79,7 +79,85 @@ Una vez creado el entorno ya podemos crear aplicaciones y asociarlas al mismo.
 
 ![image](https://user-images.githubusercontent.com/17581842/179632587-973202cc-a278-42a9-9b09-0f538a376a5e.png)
 
+## Realizando pruebas en una maquina virtual que se integra a la red virtual
+
+![image](https://user-images.githubusercontent.com/17581842/179635126-f2eb7a3f-8e81-4ffc-9c7f-533c0fb1ed82.png)
+
+![image](https://user-images.githubusercontent.com/17581842/179635013-0b4bc60e-e6ae-4c81-84d6-1c359dfbb512.png)
+
+![image](https://user-images.githubusercontent.com/17581842/179635067-cebd9ab4-8cc4-4a92-b538-197f59aa96aa.png)
 
 
+# Integracion con GitHub CI/CD
 
-# Integración de red virtual con Azure Container Apps
+![image](https://user-images.githubusercontent.com/17581842/179635455-36555f56-a2b2-43cc-8796-1106b430c7e3.png)
+
+## Workflow
+
+```yml
+
+name: Trigger auto deployment for containerapp
+
+# When this action will be executed
+on:
+  # Automatically trigger it when detected changes in repo
+  push:
+    branches: 
+      [ main ]
+    paths:
+    - '**'
+    - '.github/workflows/containerapp-AutoDeployTrigger-cbafa6ac-44be-42d6-bb0f-225327d5c843.yml'
+
+  # Allow mannually trigger 
+  workflow_dispatch:      
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout to the branch
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Log in to container registry
+        uses: docker/login-action@v1
+        with:
+          registry: crsordonezr.azurecr.io
+          username: ${{ secrets.CONTAINERAPP_REGISTRY_USERNAME }}
+          password: ${{ secrets.CONTAINERAPP_REGISTRY_PASSWORD }}
+
+      - name: Build and push container image to registry
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: crsordonezr.azurecr.io/containerapp:${{ github.sha }}
+          file: ./Dockerfile
+          context: ./
+
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    
+    steps:
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.CONTAINERAPP_AZURE_CREDENTIALS }}
+
+
+      - name: Deploy to containerapp
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az config set extension.use_dynamic_install=yes_without_prompt
+            az containerapp registry set -n containerapp -g SORDONEZR --server crsordonezr.azurecr.io --username  ${{ secrets.CONTAINERAPP_REGISTRY_USERNAME }} --password ${{ secrets.CONTAINERAPP_REGISTRY_PASSWORD }}
+            az containerapp update -n containerapp -g SORDONEZR --image crsordonezr.azurecr.io/containerapp:${{ github.sha }}
+
+```
+![image](https://user-images.githubusercontent.com/17581842/179636141-98af181a-59a8-4936-a11a-6060d7449588.png)
+
+
