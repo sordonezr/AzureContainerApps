@@ -7,5 +7,6 @@ Permite ejecutar microservicios y aplicaciones contenedorizadas en una plataform
 # Caracteristicas
 
 
-![AzureContainerApps (1)](https://user-images.githubusercontent.com/17581842/179627239-8602e9cb-eb84-45bc-b430-f532881d7280.png)
+![AzureContainerApps (2)](https://user-images.githubusercontent.com/17581842/179628279-0648eb25-5b03-4b47-91aa-a008eb29a0b8.png)
+
 
