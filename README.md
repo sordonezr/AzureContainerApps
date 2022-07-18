@@ -1,3 +1,6 @@
-# AzureContainerApps
+# Azure Container Apps
 
-![AzureContainerApps](https://user-images.githubusercontent.com/17581842/179254097-a2adcae3-1e84-4ead-a1f2-657c4f19e9ad.png)
+Permite ejecutar microservicios y aplicaciones contenedorizadas en una plataforma sin servidor
+
+![AzureContainerApps (1)](https://user-images.githubusercontent.com/17581842/179627239-8602e9cb-eb84-45bc-b430-f532881d7280.png)
+
