@@ -28,6 +28,10 @@ Permite ejecutar microservicios y aplicaciones contenedorizadas en una plataform
 
 - [Ver los registros de aplicaciones](https://docs.microsoft.com/es-mx/azure/container-apps/monitor?tabs=bash) mediante Azure Log Analytics.
 
+# Arquitectura
+
+Conectividad privada a través de la infraestructura de red virtual.
+
 ![AzureContainerApps (2)](https://user-images.githubusercontent.com/17581842/179628279-0648eb25-5b03-4b47-91aa-a008eb29a0b8.png)
 
-
+# Integración de red virtual con Azure Container Apps
