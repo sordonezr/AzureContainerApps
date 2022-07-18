@@ -12,7 +12,7 @@ Permite ejecutar microservicios y aplicaciones contenedorizadas en una plataform
 
 - [Habilitar la entrada HTTPS](https://docs.microsoft.com/es-mx/azure/container-apps/ingress?tabs=bash) sin tener que administrar otra infraestructura de Azure.
 
-- [Dividir el tráfico](https://docs.microsoft.com/es-mx/azure/container-apps/revisions) entre varias versiones de una aplicación para las implementaciones azul-verde y los escenarios de prueba A-B.
+- [Dividir el tráfico](https://docs.microsoft.com/es-mx/azure/container-apps/revisions) entre varias versiones de una aplicación.
 
 - [Usar la entrada interna](https://docs.microsoft.com/es-mx/azure/container-apps/connect-apps?tabs=bash) y la detección de servicios para proteger los puntos de conexión solo internos con la detección de servicios basada en DNS integrada.
 
