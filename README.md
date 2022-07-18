@@ -1,6 +1,6 @@
 # Azure Container Apps
 
-Permite ejecutar microservicios y aplicaciones contenedorizadas en una plataforma sin servidor
+Permite ejecutar microservicios y aplicaciones contenedorizadas en una plataforma sin servidor, no tiene en cuenta el entorno de ejecución o el modelo de programación. Con Container Apps, puede puede sacar provecho de las ventajas de ejecutar contenedores y, al mismo tiempo, olvidarse de administrar la infraestructura en la nube y orquestadores de contenedores complejos.
 
 # Caracteristicas
 
