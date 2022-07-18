@@ -4,7 +4,7 @@ Permite ejecutar microservicios y aplicaciones contenedorizadas en una plataform
 
 ![image](https://user-images.githubusercontent.com/17581842/179627943-0f43598b-e6cb-4fd5-89de-12a155109e50.png)
 
-# Caracteristicas
+# Características
 
 - [Ejecutar varias revisiones](https://docs.microsoft.com/es-mx/azure/container-apps/application-lifecycle-management) del contenedor y administrar el ciclo de vida de la aplicación del contenedor.
 
