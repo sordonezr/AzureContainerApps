@@ -56,7 +56,7 @@ az network vnet subnet create -n SN-CONTAINER-APP --vnet-name VN-CONTAINER-APP -
 ## Área de trabajo de Log Analytics
 
 ```bash
-az monitor log-analytics workspace create -g SORDONEZ -n workspacecontainerapp
+az monitor log-analytics workspace create -g SORDONEZR -n workspacecontainerapp -l eastus
 ```
 ![image](https://user-images.githubusercontent.com/17581842/179634583-b67886b6-2596-458f-8e30-6ccb6d436f76.png)
 
