@@ -35,19 +35,29 @@ Conectividad privada a través de la infraestructura de red virtual.
 ![AzureContainerApps (2)](https://user-images.githubusercontent.com/17581842/179628279-0648eb25-5b03-4b47-91aa-a008eb29a0b8.png)
 
 
-
 # Despliegue
 
 ## Red Virtual
+
+```bash
+az network vnet create --name VN-CONTAINER-APP --address-prefix 10.0.0.0/16 --resource-group SORDONEZR --subnet-name default
+```
 
 ![image](https://user-images.githubusercontent.com/17581842/179633862-5050c6b9-1417-47e8-83a3-52ce20908b7f.png)
 
 ## Sub Red
 
+```bash
+az network vnet subnet create -n SN-CONTAINER-APP --vnet-name VN-CONTAINER-APP -g SORDONEZR --address-prefixes "10.0.0.0/23"
+```
+
 ![image](https://user-images.githubusercontent.com/17581842/179634108-c7ea6019-94be-44de-8257-2075d9619bfd.png)
 
 ## Área de trabajo de Log Analytics
 
+```bash
+az monitor log-analytics workspace create -g SORDONEZ -n workspacecontainerapp
+```
 ![image](https://user-images.githubusercontent.com/17581842/179634583-b67886b6-2596-458f-8e30-6ccb6d436f76.png)
 
 ## Registro de contenedor
