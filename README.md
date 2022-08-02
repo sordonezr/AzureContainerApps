@@ -66,6 +66,8 @@ az monitor log-analytics workspace create -g SORDONEZR -n workspacecontainerapp 
 
 ## Zona DNS privada
 
+![image](https://user-images.githubusercontent.com/17581842/182390595-37b170b5-e40a-48c8-b419-8579236acde8.png)
+
 ![image](https://user-images.githubusercontent.com/17581842/179634763-3c1ecd42-4579-4726-9c27-565a11e2b642.png)
 
 ![image](https://user-images.githubusercontent.com/17581842/179634811-6633c767-8dc7-4622-817c-42f55f3c8297.png)
